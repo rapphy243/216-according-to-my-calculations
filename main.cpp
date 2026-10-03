@@ -16,7 +16,7 @@ int main() {
  
   // Prints out the number 2
   std::cout << evaluate("(7 + 9) / 8") << endl;
-  
+
   // Prints out the number 8.125
-  std::cout << evaluate("7 + 9 / 8") << endl;
+  std::cout << evaluate("8 / 4 * 2") << endl;
 }

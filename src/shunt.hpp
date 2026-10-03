@@ -4,18 +4,18 @@
 #include "queue.hpp"
 
 int priority(char c) {
-    if (c == '+' || c == '-' || c == '/') {
+    if (c == '+' || c == '-') {
         return 1;
     } else if (c == '*') {
         return 2;
-    } else if (c == '^') {
+    } else if (c == '/') {
         return 3;
     }
     return 0;
 }
 
 bool isOperator(char c) {
-    return c == '+' || c == '-' || c == '*' || c == '/' || c == '^';
+    return c == '+' || c == '-' || c == '*' || c == '/';
 }
 
 std::string infixToPostfix(const std::string& infix) {
